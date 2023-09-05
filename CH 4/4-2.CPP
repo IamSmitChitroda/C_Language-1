@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<conio.h>
+#define P printf
+#define S scanf
+void main (){
+	int a,b;
+	clrscr();
+	P("Enter two numbers : ");
+	S("%d%d",&a,&b);
+	P("Addition : %d\n",a+b);
+	P("Substraction : %d\n",a-b);
+	P("Multiplication : %d\n",a*b);
+	P("Division : %d\n",a/b);
+	P("Modulos : %d",a%b);
+
+	getch();
+}
