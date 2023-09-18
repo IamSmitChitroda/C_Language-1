@@ -1,0 +1,14 @@
+#include<stdio.h>
+#include<conio.h>
+#define P printf
+#define S scanf
+void main()
+{
+	int a;
+	clrscr();
+	P("Enter any number : ");
+	S("%d",&a);
+
+	getch();
+}
+
