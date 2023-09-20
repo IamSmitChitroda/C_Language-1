@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<conio.h>
+#define P printf
+#define S scanf
+
+void main()
+{
+	int i=10;
+	clrscr();
+
+	do
+	     P("%d\n",i--);
+	while(i>=1);
+
+	getch();
+}
