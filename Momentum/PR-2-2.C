@@ -9,6 +9,9 @@ void main()
 	P("Enter any number : ");
 	S("%d",&a);
 
+	a%2==0
+	? P("Even number !!")
+	: P("Odd number !!");
 	getch();
 }
 
