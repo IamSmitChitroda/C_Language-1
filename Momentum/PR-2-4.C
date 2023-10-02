@@ -16,15 +16,15 @@ void main()
 	}
 	else if((unit<=150) && (unit>=51))
 	{
-		ammount=25+((ammount-50)*0.75);
+		ammount=25+((unit-50)*0.75);
 	}
 	else if((unit<=250) && (unit>=151))
 	{
-		ammount=(100)+((ammount-150)*1.2);
+		ammount=(100)+((unit-150)*1.2);
 	}
 	else if(unit>=251)
 	{
-		ammount=(220)+((ammount-250)*1.5);
+		ammount=(220)+((unit-250)*1.5);
 	}
 
 	bill=ammount+(ammount*0.2);
