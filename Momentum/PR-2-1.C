@@ -13,7 +13,7 @@ void main()
 	{
 		P("Charachter !!");
 	}
-	else if(a>=0)
+	else if(a>='0' && ch<='9')
 	{
 		P("Digit !!");
 	}
