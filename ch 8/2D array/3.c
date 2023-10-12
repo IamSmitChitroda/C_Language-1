@@ -1,50 +1,33 @@
 #include <stdio.h>
-#define P printf
-#define S scanf
-
 int main()
 {
     int r, c;
-    P("Enter Row size.");
-    S("%d", &r);
-    P("Enter coloumn size.");
-    S("%d", &c);
+    printf("Enter Row size : ");
+    scanf("%d", &r);
+    printf("Enter column size : ");
+    scanf("%d", &c);
 
-    int i, j, a[r][c], b[r][c];
+    int a[r][c], sum = 0;
+    printf("\n\n----:Array A:----\n\n");
 
-    P("Array a.\n");
-
-    for (i = 0; i < r; i++)
+    for (int i = 0; i < r; i++)
     {
-
-        for (j = 0; j < c; j++)
+        for (int j = 0; j < c; j++)
         {
-            P("Enter a[%d][%d] : ", i, j);
-            S("%d", &a[i][j]);
+            printf("Enter a[%d][%d] : ", i, j);
+            scanf("%d", &a[i][j]);
         }
     }
 
-    P("Array b.\n");
-    for (i = 0; i < r; i++)
+    for (int i = 0; i < r; i++)
     {
-
-        for (j = 0; j < c; j++)
+        for (int j = 0; j < c; j++)
         {
-            P("Enter b[%d][%d] : ", i, j);
-            S("%d", &b[i][j]);
+            if (i == j)
+                sum += a[i][j];
         }
     }
 
-    P("\nSum of Array .\n");
-
-    for (i = 0; i < r; i++)
-    {
-
-        for (j = 0; j < c; j++)
-        {
-            P("%d ", a[i][j] + b[i][j]);
-        }
-        P("\n");
-    }
+    printf("Sum of all diagonal elements : %d", sum);
     return 0;
 }
