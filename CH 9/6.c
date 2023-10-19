@@ -14,25 +14,37 @@ int main()
         for (int i = 0; i < len; i++)
         {
             if (pass[i] <= 65 && pass[i] >= 90)
+            {
                 Upper = 1;
+                break;
+            }
         }
 
         for (int i = 0; i < len; i++)
         {
             if (pass[i] <= 97 && pass[i] >= 122)
+            {
                 Lowwer = 1;
+                break;
+            }
         }
 
         for (int i = 0; i < len; i++)
         {
             if ((pass[i] <= 33 && pass[i] >= 47) || (pass[i] <= 58 && pass[i] >= 64))
+            {
                 symboll = 1;
+                break;
+            }
         }
 
         for (int i = 0; i < len; i++)
         {
             if (pass[i] <= 48 && pass[i] >= 57)
+            {
                 digit = 1;
+                break;
+            }
         }
 
         ((Upper == 1) && (Lowwer == 1) && (symboll == 1) && (digit == 1))
