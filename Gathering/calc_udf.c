@@ -39,46 +39,41 @@ int main()
 {
     int a, b, choice;
 
-jump:
-
     printf("Enter 1st value : ");
     scanf("%d", &a);
     printf("Enter 2nd value : ");
     scanf("%d", &b);
 
-    statement();
-    scanf("%d", &choice);
-
-    switch (choice)
+    do
     {
-    case 1:
-        sum(a, b);
-        goto jump;
+        statement();
+        scanf("%d", &choice);
 
-    case 2:
-        sub(a, b);
-        goto jump;
+        switch (choice)
+        {
+        case 1:
+            sum(a, b);
+            break;
+        case 2:
+            sub(a, b);
+            break;
+        case 3:
+            mult(a, b);
+            break;
+        case 4:
+            div(a, b);
+            break;
+        case 5:
+            mult(a, b);
+            break;
+        case 0:
+            printf("Exit !!");
+            break;
+        default:
+            printf("Unknown intput !!");
+        }
 
-    case 3:
-        mult(a, b);
-        goto jump;
-
-    case 4:
-        div(a, b);
-        goto jump;
-
-    case 5:
-        mult(a, b);
-        goto jump;
-
-    case 0:
-        printf("Exit !!");
-        break;
-
-    default:
-        printf("Unknown intput !!");
-        goto jump;
-    }
+    } while (choice != 0);
 
     return 0;
 }
