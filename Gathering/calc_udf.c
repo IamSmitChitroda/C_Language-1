@@ -12,27 +12,27 @@ void statement()
 
 void sum(int a, int b)
 {
-    printf("Sum : %d\n", a + b);
+    printf("\n\nSum : %d\n", a + b);
 }
 
 void sub(int a, int b)
 {
-    printf("Sub : %d\n", a - b);
+    printf("\n\nSub : %d\n", a - b);
 }
 
 void mult(int a, int b)
 {
-    printf("Mul : %d\n", a * b);
+    printf("\n\nMul : %d\n", a * b);
 }
 
 void div(int a, int b)
 {
-    printf("Div : %d\n", a / b);
+    printf("\n\nDiv : %d\n", a / b);
 }
 
 void mod(int a, int b)
 {
-    printf("Mod : %d\n", a % b);
+    printf("\n\nMod : %d\n", a % b);
 }
 
 int main()
