@@ -13,7 +13,7 @@ int main()
     for (int i = 0; i < 5; i++)
     {
         pointer = &a[i];
-        printf("Array [%d] : %d\n", i, pointer);
+        printf("Array [%d] : %d\n", i, (*pointer) * (*pointer));
     }
 
     return 0;
