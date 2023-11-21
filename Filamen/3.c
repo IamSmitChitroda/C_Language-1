@@ -1,34 +1,28 @@
 #include <stdio.h>
-int main()
+main()
 {
-    char string1, string2;
-    int len1 = 0, len2 = 0, com = 0, i;
 
-    printf("Enter First string : ");
-    scanf("%[^\n]", &string1);
-    printf("Enter Secoend string : ");
-    scanf("%[^\n]", &string2);
+    char string1[20], string2[20];
+    int comp = 0;
 
-    for (i = 0; string1 != NULL; i++)
-        len1++;
-    for (i = 0; string2 != NULL; i++)
-        len2++;
+    printf("Enter string 1:");
+    scanf("%s", &string1);
+    printf("Enter string 2:");
+    scanf("%s", &string2);
 
-    if (len1 == len2)
+    for (int i = 0; string1[i] != '\0' && string1[i] != '\0'; i++)
     {
-        for (i = 0; i < len1; i++)
+        if (string1[i] == string2[i])
         {
-            if (string1[i] == string2[i])
-                com++;
+            comp = 1;
         }
-
-        (len1 == com)
-            ? printf("Given string is same !!")
-            : printf("Given string is not same !!");
+        else
+        {
+            comp = 0;
+        }
     }
 
-    else
-        printf("Given string is not same !!");
-
-    return 0;
+    (comp == 1)
+        ? printf("compare successful!!")
+        : printf("compare unsuccessful!!");
 }
