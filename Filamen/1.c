@@ -7,7 +7,7 @@ int main()
 
     int len = 0, count = 0;
 
-    for (int i = 0; string1 != '\0'; i++)
+    for (int i = 0; string1[i] != '\0'; i++)
         len++;
 
     for (int i = 0; i < len; i++)
