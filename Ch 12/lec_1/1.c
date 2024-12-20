@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+// the structure
 struct studentData
 {
     int id;
