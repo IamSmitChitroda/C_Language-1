@@ -12,7 +12,7 @@ struct studentData
     char school[20];
 };
 
-int main(int argc, char const *argv[])
+int main()
 {
     struct studentData obj[3];
 
